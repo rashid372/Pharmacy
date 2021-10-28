@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Pharmacy" Class="MedicalShopDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=Rashid;Initial Catalog=Pharmacy;User ID=sa" SettingsObjectName="MedicalShopBackEnd.Properties.Settings" SettingsPropertyName="PharmacyConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.ManufacturerViewAll" Method="ManufacturerViewAll">
+    <ElementType Name="ManufacturerViewAllResult">
+      <Column Name="ID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ProductViewAll" Method="ProductViewAll">
+    <ElementType Name="ProductViewAllResult">
+      <Column Name="ID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="[Group ID]" Member="Group_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Manufacture ID]" Member="Manufacture_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Shelf ID]" Member="Shelf_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Generic ID]" Member="Generic_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Stock Minimum Level]" Member="Stock_Minimum_Level" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="[Stock Maximum Level]" Member="Stock_Maximum_Level" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="[Medicine For]" Member="Medicine_For" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="[Unit ID]" Member="Unit_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ProductViewByManufactureId" Method="ProductViewByManufactureId">
+    <Parameter Name="manufactureId" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="ProductViewByManufactureIdResult">
+      <Column Name="productId" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="productName" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="manufactureId" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ProductViewAllByManufactureId" Method="ProductViewAllByManufactureId">
+    <Parameter Name="manufactureId" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="ProductViewAllByManufactureIdResult">
+      <Column Name="productId" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="productName" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="purchaseRate" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="MRP" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Pack" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="unit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="manufactureId" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

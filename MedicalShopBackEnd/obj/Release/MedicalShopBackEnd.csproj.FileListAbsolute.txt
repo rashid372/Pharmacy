@@ -1,0 +1,5 @@
+F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\bin\Release\MedicalShopBackEnd.dll.config
+F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\bin\Release\MedicalShopBackEnd.dll
+F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\bin\Release\MedicalShopBackEnd.pdb
+F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\obj\Release\MedicalShopBackEnd.dll
+F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\obj\Release\MedicalShopBackEnd.pdb

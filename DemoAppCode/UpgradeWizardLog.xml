@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event action="Analyze" type="Success" name="Assembly References" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\app.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\app.config" />
+  <event action="Analyze" type="Success" name="frmAboutUs.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmAboutUs.resx" />
+  <event action="Analyze" type="Success" name="frmAccountGroup.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmAccountGroup.resx" />
+  <event action="Analyze" type="Success" name="frmAccountLedger.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmAccountLedger.resx" />
+  <event action="Analyze" type="Success" name="frmCompanyProgress.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmCompanyProgress.resx" />
+  <event action="Analyze" type="Success" name="frmCounterSale.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmCounterSale.resx" />
+  <event action="Analyze" type="Success" name="frmCounterSaleRegister.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmCounterSaleRegister.resx" />
+  <event action="Analyze" type="Success" name="frmCreateFinancialYear.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmCreateFinancialYear.resx" />
+  <event action="Analyze" type="Success" name="frmDailyCustomer.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmDailyCustomer.resx" />
+  <event action="Analyze" type="Success" name="frmDamageStock.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmDamageStock.resx" />
+  <event action="Analyze" type="Success" name="frmDamageStockRegister.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmDamageStockRegister.resx" />
+  <event action="Analyze" type="Success" name="frmGeneralSettings.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmGeneralSettings.resx" />
+  <event action="Analyze" type="Success" name="frmGenericNames.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmGenericNames.resx" />
+  <event action="Analyze" type="Success" name="frmGreetingText.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmGreetingText.resx" />
+  <event action="Analyze" type="Success" name="frmJournalEntry.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmJournalEntry.resx" />
+  <event action="Analyze" type="Success" name="frmJournalRegister.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmJournalRegister.resx" />
+  <event action="Analyze" type="Success" name="frmManufacture.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmManufacture.resx" />
+  <event action="Analyze" type="Success" name="frmMedicalShop.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmMedicalShop.resx" />
+  <event action="Analyze" type="Success" name="frmPayment.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmPayment.resx" />
+  <event action="Analyze" type="Success" name="frmPaymentRegister.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmPaymentRegister.resx" />
+  <event action="Analyze" type="Success" name="frmPopup.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmPopup.resx" />
+  <event action="Analyze" type="Success" name="frmProduct.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmProduct.resx" />
+  <event action="Analyze" type="Success" name="frmProductAvailability.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmProductAvailability.resx" />
+  <event action="Analyze" type="Success" name="frmProductBatch.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmProductBatch.resx" />
+  <event action="Analyze" type="Success" name="frmProductDetails.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmProductDetails.resx" />
+  <event action="Analyze" type="Success" name="frmProductGroup.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmProductGroup.resx" />
+  <event action="Analyze" type="Success" name="frmProductManage.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmProductManage.resx" />
+  <event action="Analyze" type="Success" name="frmPurchaseInvoice.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmPurchaseInvoice.resx" />
+  <event action="Analyze" type="Success" name="frmPurchaseRegister.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmPurchaseRegister.resx" />
+  <event action="Analyze" type="Success" name="frmPurchaseReturn.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmPurchaseReturn.resx" />
+  <event action="Analyze" type="Success" name="frmPurchaseReturnRegister.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmPurchaseReturnRegister.resx" />
+  <event action="Analyze" type="Success" name="frmReceipt.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmReceipt.resx" />
+  <event action="Analyze" type="Success" name="frmReceiptRegister.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmReceiptRegister.resx" />
+  <event action="Analyze" type="Success" name="frmReminderView.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmReminderView.resx" />
+  <event action="Analyze" type="Success" name="frmSalesInvoice.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmSalesInvoice.resx" />
+  <event action="Analyze" type="Success" name="frmSalesMan.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmSalesMan.resx" />
+  <event action="Analyze" type="Success" name="frmSalesRegister.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmSalesRegister.resx" />
+  <event action="Analyze" type="Success" name="frmSalesReturn.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmSalesReturn.resx" />
+  <event action="Analyze" type="Success" name="frmsalesReturnRegister.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmsalesReturnRegister.resx" />
+  <event action="Analyze" type="Success" name="frmScheduler.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmScheduler.resx" />
+  <event action="Analyze" type="Success" name="frmSelectCompany.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmSelectCompany.resx" />
+  <event action="Analyze" type="Success" name="frmSelectFinancialYear.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmSelectFinancialYear.resx" />
+  <event action="Analyze" type="Success" name="frmSendMail.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmSendMail.resx" />
+  <event action="Analyze" type="Success" name="frmShelf.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmShelf.resx" />
+  <event action="Analyze" type="Success" name="frmStockEntry.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmStockEntry.resx" />
+  <event action="Analyze" type="Success" name="frmStockRegister.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmStockRegister.resx" />
+  <event action="Analyze" type="Success" name="frmTelephoneDirectory.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmTelephoneDirectory.resx" />
+  <event action="Analyze" type="Success" name="frmUnit.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmUnit.resx" />
+  <event action="Analyze" type="Success" name="frmUserCreation.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmUserCreation.resx" />
+  <event action="Analyze" type="Success" name="frmVendor.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\frmVendor.resx" />
+  <event action="Analyze" type="Success" name="MDIForm.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\MDIForm.resx" />
+  <event action="Analyze" type="Success" name="MDIMedicalShop.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\MDIMedicalShop.resx" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="rptAccountGroup.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptAccountGroup.resx" />
+  <event action="Analyze" type="Success" name="rptAccountledger.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptAccountledger.resx" />
+  <event action="Analyze" type="Success" name="rptBalanceSheet.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptBalanceSheet.resx" />
+  <event action="Analyze" type="Success" name="rptBankBook.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptBankBook.resx" />
+  <event action="Analyze" type="Success" name="rptCashBook.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptCashBook.resx" />
+  <event action="Analyze" type="Success" name="rptCounterSale.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptCounterSale.resx" />
+  <event action="Analyze" type="Success" name="rptDailyCustomer.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptDailyCustomer.resx" />
+  <event action="Analyze" type="Success" name="rptDailyIncomeExpense.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptDailyIncomeExpense.resx" />
+  <event action="Analyze" type="Success" name="rptDamageStock.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptDamageStock.resx" />
+  <event action="Analyze" type="Success" name="rptDayBook.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptDayBook.resx" />
+  <event action="Analyze" type="Success" name="rptGenericName.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptGenericName.resx" />
+  <event action="Analyze" type="Success" name="rptInstantSale.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptInstantSale.resx" />
+  <event action="Analyze" type="Success" name="rptJournalRegister.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptJournalRegister.resx" />
+  <event action="Analyze" type="Success" name="rptLedgerBalance.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptLedgerBalance.resx" />
+  <event action="Analyze" type="Success" name="rptManufacture.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptManufacture.resx" />
+  <event action="Analyze" type="Success" name="rptMinimumStock.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptMinimumStock.resx" />
+  <event action="Analyze" type="Success" name="rptPayment.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptPayment.resx" />
+  <event action="Analyze" type="Success" name="rptPriceList.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptPriceList.resx" />
+  <event action="Analyze" type="Success" name="rptProductBatch.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptProductBatch.resx" />
+  <event action="Analyze" type="Success" name="rptProductGroup.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptProductGroup.resx" />
+  <event action="Analyze" type="Success" name="rptProfitAndLossAnalysis.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptProfitAndLossAnalysis.resx" />
+  <event action="Analyze" type="Success" name="rptPurchase.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptPurchase.resx" />
+  <event action="Analyze" type="Success" name="rptPurchaseReturn.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptPurchaseReturn.resx" />
+  <event action="Analyze" type="Success" name="rptReceipt.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptReceipt.resx" />
+  <event action="Analyze" type="Success" name="rptReminder.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptReminder.resx" />
+  <event action="Analyze" type="Success" name="rptSales.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptSales.resx" />
+  <event action="Analyze" type="Success" name="rptSalesReturn.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptSalesReturn.resx" />
+  <event action="Analyze" type="Success" name="rptShortExpiry.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptShortExpiry.resx" />
+  <event action="Analyze" type="Success" name="rptStatistics.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptStatistics.resx" />
+  <event action="Analyze" type="Success" name="rptStockAndSale.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptStockAndSale.resx" />
+  <event action="Analyze" type="Success" name="rptStockEtry.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptStockEtry.resx" />
+  <event action="Analyze" type="Success" name="rptTaxReport.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptTaxReport.resx" />
+  <event action="Analyze" type="Success" name="rptTrialBalance.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptTrialBalance.resx" />
+  <event action="Analyze" type="Success" name="rptUser.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptUser.resx" />
+  <event action="Analyze" type="Success" name="rptVendor.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rptVendor.resx" />
+  <event action="Analyze" type="Success" name="rtpDoctor.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rtpDoctor.resx" />
+  <event action="Analyze" type="Success" name="rtpProduct.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rtpProduct.resx" />
+  <event action="Analyze" type="Success" name="rtpSalesMan.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rtpSalesMan.resx" />
+  <event action="Analyze" type="Success" name="rtpStock.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop\rtpStock.resx" />
+  <event action="Analyze" type="Success" name="MedicalShop" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\MedicalShopBackEnd.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\app.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\app.config" />
+  <event action="Analyze" type="Success" name="MedicalShopBackEnd" path="F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\MedicalShopBackEnd.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="F:\BIG DATA\old code_pharmacy\Pharmacy\PharmacyWPFUI\PharmacyWPFUI.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="F:\BIG DATA\old code_pharmacy\Pharmacy\PharmacyWPFUI\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="F:\BIG DATA\old code_pharmacy\Pharmacy\PharmacyWPFUI\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="F:\BIG DATA\old code_pharmacy\Pharmacy\PharmacyWPFUI\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="F:\BIG DATA\old code_pharmacy\Pharmacy\PharmacyWPFUI\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="F:\BIG DATA\old code_pharmacy\Pharmacy\PharmacyWPFUI\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="F:\BIG DATA\old code_pharmacy\Pharmacy\PharmacyWPFUI\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="F:\BIG DATA\old code_pharmacy\Pharmacy\PharmacyWPFUI\App.config" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\PharmacyWPFUI\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="PharmacyWPFUI" path="F:\BIG DATA\old code_pharmacy\Pharmacy\PharmacyWPFUI\PharmacyWPFUI.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\CSharp.ReportLibrary.csproj" />
+  <event action="Analyze" type="Success" name="OlympicMedalsByNationalTeams.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\Advanced\OlympicMedalsByNationalTeams.resx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="app.config" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\app.config" />
+  <event action="Analyze" type="Success" name="BarcodesReport.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\Barcodes\BarcodesReport.resx" />
+  <event action="Analyze" type="Success" name="PopulationDensity.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\Choropleth\PopulationDensity.resx" />
+  <event action="Analyze" type="Success" name="ProductSales.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\Crosstab\ProductSales.resx" />
+  <event action="Analyze" type="Success" name="DashBoard.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\Dashboard\DashBoard.resx" />
+  <event action="Analyze" type="Success" name="SalesByRegionDashboard.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\Dashboard\SalesByRegionDashboard.resx" />
+  <event action="Analyze" type="Success" name="ListBoundReport.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\DataBinding\ListBoundReport.resx" />
+  <event action="Analyze" type="Success" name="EmployeeSalesSummary.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\EmployeeSales\EmployeeSalesSummary.resx" />
+  <event action="Analyze" type="Success" name="Invoice.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\Invoice\Invoice.resx" />
+  <event action="Analyze" type="Success" name="SalesOrderDetails.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\Invoice\SalesOrderDetails.resx" />
+  <event action="Analyze" type="Success" name="ProductTag.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\Multicolumn\ProductTag.resx" />
+  <event action="Analyze" type="Success" name="ProductCatalog.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\ProductCatalog\ProductCatalog.resx" />
+  <event action="Analyze" type="Success" name="ProductLineSales.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\ProductLineSales\ProductLineSales.resx" />
+  <event action="Analyze" type="Success" name="ReportCatalog.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\ReportCatalog\ReportCatalog.resx" />
+  <event action="Analyze" type="Success" name="DailySaleReport.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\SalesReports\DailySaleReport.resx" />
+  <event action="Analyze" type="Success" name="DailySaleReport_1.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\SalesReports\DailySaleReport_1.resx" />
+  <event action="Analyze" type="Success" name="DailySaleReport_2.resx" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\SalesReports\DailySaleReport_2.resx" />
+  <event action="Analyze" type="Success" name="CSharp.ReportLibrary" path="F:\BIG DATA\old code_pharmacy\Pharmacy\ReportLibrary\CSharp.ReportLibrary.csproj" />
+  <event action="Analyze" type="Success" name="MedicalShop" path="F:\BIG DATA\old code_pharmacy\Pharmacy\DemoAppCode\MedicalShop.sln" />
+</log>

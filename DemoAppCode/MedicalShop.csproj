@@ -1,0 +1,1276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{27D92F6D-AA1A-4FE6-B7CF-560BBCD569BE}</ProjectGuid>
+    <SchemaVersion>2</SchemaVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>MedicalShop</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="Microsoft.SqlServer.Smo">
+      <HintPath>.\MedicalShopReferences\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web">
+      <HintPath>.\MedicalShopReferences\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Reporting, Version=10.0.16.113, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\Telerik.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=10.0.16.113, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\Telerik.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MedicalShop\CryptoEngine.cs" />
+    <Compile Include="MedicalShop\frmPatientpraviousRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmProductManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmProductManage.Designer.cs">
+      <DependentUpon>frmProductManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalShop\frmPurchaseRateWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmSelectCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\InvoiceDataInfo.cs" />
+    <Compile Include="MedicalShop\InvoiceItemsInfo.cs" />
+    <Compile Include="MedicalShop\LPrinter.cs" />
+    <Compile Include="MedicalShop\PrinterInfo.cs" />
+    <Compile Include="MedicalShop\Printing.cs" />
+    <Compile Include="MedicalShop\PrintingCountersale.cs" />
+    <Compile Include="MedicalShop\PrintingPurchaseInvoice.cs" />
+    <Compile Include="MedicalShop\ReportsViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\ReportsViewer.Designer.cs">
+      <DependentUpon>ReportsViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalShop\rptAdvanced.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptDailyIncomeExpense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptMonthlyIncomeExpense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptMostPurchaseProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptMostRunningProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptStockandPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\FinacialYearInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\CompanySP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\JournalDetailsSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\CalenderInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\CounterSaleDetailsSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\SalesManInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\ManufacturerInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\AccountGroupSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\LedgerPostingInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\DamageStcokMasterInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\GreetingTextInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\DamageStockDetailsInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\CompanyInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\AccountGroupInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\DBConnection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\ReceiptDetailsSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\PurchaseDetailsSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\PatientMedicineDetailsSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\DamageStcokMasterSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\AccountLedgerSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\UserInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\StockMasterInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\PatientMedicineDetailsInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\ShelfSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\SalesDetailsInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\ProductBatchInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\PaymentMasterSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\PatientInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\SettingsInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\SalesReturnMasterSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\SalesMasterInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\ReceiptMasterInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\PurchaseDetailsInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\ProductGroupInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\SalesReturnDetailsSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\InstantSaleStockPostingInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\DoctorSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\VendorInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\StockPostingInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\ProductInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTimeSharedInput>true</DesignTimeSharedInput>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="MedicalShop\AccountLedgerInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\dgv.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\PrimaryDBSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\Properties\Settings.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\StockDetailsSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\SalesManSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\ExportToExcel.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\DBConnectionForPDB.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\SettingsSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\ReceiptMasterSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\DecimalValidation.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\ReminderSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\LedgerPostingSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\GenericNameSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\StockMasterSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\PurchaseReturnMasterSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\CalenderSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\GreetingTextSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\ShelfInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\GenericNameInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\VendorSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\ProductBatchSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\UserSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\PaymentMasterInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\DamageStockDetailsSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\SalesMasterSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\DoctorInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\CounterSaleMasterSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\SalesReturnMasterInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\UnitInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\CompanyPathInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\CounterSaleDetailsInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\PurchaseReturnMasterInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\FinacialYearSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\ManufacturerSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\ReminderInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\UserPrivilegeInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\PurchaseReturnDetailsInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\PaymentDetailsInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\JournalMasterInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\CounterSaleMasterInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\Program.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\SalesDetailsSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\PatientSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\StockDetailsInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\SalesReturnDetailsInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\ReceiptDetailsInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\DateInGrid.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\StockPostingSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\PaymentDetailsSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\PurchaseMasterSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\JournalMasterSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\InstantSaleStockPostingSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\PurchaseMasterInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\JournalDetailsInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\UnitSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\PurchaseReturnDetailsSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\ProductSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\ProductGroupSP.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MedicalShop\frmUnit.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptProductBatch.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rtpSalesMan.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptPurchase.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptDayBook.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmUserCreation.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmGreetingText.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rtpDoctor.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmPurchaseRegister.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptAccountGroup.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptUser.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptInstantSale.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmSendMail.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmCounterSaleRegister.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmMedicalShop.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptProductGroup.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmSalesRegister.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptTrialBalance.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptDamageStock.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmProductAvailability.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptGenericName.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmPopup.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmSelectFinancialYear.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmDamageStockRegister.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmJournalRegister.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptManufacture.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmPayment.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptCashBook.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmStockEntry.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\MDIForm.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmSalesReturn.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmReminderView.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmDailyCustomer.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmProductBatch.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmManufacture.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\MDIMedicalShop.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmCompanyProgress.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptBankBook.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rtpProduct.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptStockAndSale.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmShelf.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmCreateFinancialYear.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmAccountLedger.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmReceiptRegister.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmProductGroup.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmAccountGroup.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptSales.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptBalanceSheet.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmsalesReturnRegister.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptMinimumStock.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmTelephoneDirectory.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmPaymentRegister.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptShortExpiry.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmScheduler.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptCounterSale.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmReceipt.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptSalesReturn.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmPurchaseReturnRegister.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptReceipt.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptPriceList.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmAboutUs.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptPayment.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmPurchaseReturn.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmCounterSale.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptDailyCustomer.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmProduct.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptPurchaseReturn.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptJournalRegister.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmGeneralSettings.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmVendor.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptAccountledger.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptLedgerBalance.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmSalesMan.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rtpStock.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmStockRegister.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmSalesInvoice.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmDamageStock.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptVendor.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmProductDetails.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptTaxReport.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmJournalEntry.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptStockEtry.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptProfitAndLossAnalysis.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptStatistics.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmGenericNames.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmPurchaseInvoice.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\rptReminder.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MedicalShop\frmPatientpraviousRate.resx">
+      <DependentUpon>frmPatientpraviousRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmProductManage.resx">
+      <DependentUpon>frmProductManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmpurchaseRateWindow.resx">
+      <DependentUpon>frmPurchaseRateWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmSelectCompany.resx">
+      <DependentUpon>frmSelectCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmUnit.resx">
+      <DependentUpon>frmUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\ReportsViewer.resx">
+      <DependentUpon>ReportsViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptAdvanced.resx" />
+    <EmbeddedResource Include="MedicalShop\rptDailyIncomeExpense.resx">
+      <DependentUpon>rptDailyIncomeExpense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptMonthlyIncomeExpense.resx">
+      <DependentUpon>rptMonthlyIncomeExpense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptMostPurchaseProducts.resx">
+      <DependentUpon>rptMostPurchaseProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptMostRunningProducts.resx">
+      <DependentUpon>rptMostRunningProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptProductBatch.resx">
+      <DependentUpon>rptProductBatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptStockandPrice.resx">
+      <DependentUpon>rptStockandPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rtpSalesMan.resx">
+      <DependentUpon>rtpSalesMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptPurchase.resx">
+      <DependentUpon>rptPurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptDayBook.resx">
+      <DependentUpon>rptDayBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmUserCreation.resx">
+      <DependentUpon>frmUserCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmGreetingText.resx">
+      <DependentUpon>frmGreetingText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rtpDoctor.resx">
+      <DependentUpon>rtpDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmPurchaseRegister.resx">
+      <DependentUpon>frmPurchaseRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptAccountGroup.resx">
+      <DependentUpon>rptAccountGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptUser.resx">
+      <DependentUpon>rptUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptInstantSale.resx">
+      <DependentUpon>rptInstantSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmSendMail.resx">
+      <DependentUpon>frmSendMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmCounterSaleRegister.resx">
+      <DependentUpon>frmCounterSaleRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmMedicalShop.resx">
+      <DependentUpon>frmMedicalShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptProductGroup.resx">
+      <DependentUpon>rptProductGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmSalesRegister.resx">
+      <DependentUpon>frmSalesRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptTrialBalance.resx">
+      <DependentUpon>rptTrialBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptDamageStock.resx">
+      <DependentUpon>rptDamageStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmProductAvailability.resx">
+      <DependentUpon>frmProductAvailability.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptGenericName.resx">
+      <DependentUpon>rptGenericName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmPopup.resx">
+      <DependentUpon>frmPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmSelectFinancialYear.resx">
+      <DependentUpon>frmSelectFinancialYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmDamageStockRegister.resx">
+      <DependentUpon>frmDamageStockRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmJournalRegister.resx">
+      <DependentUpon>frmJournalRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptManufacture.resx">
+      <DependentUpon>rptManufacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmPayment.resx">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptCashBook.resx">
+      <DependentUpon>rptCashBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmStockEntry.resx">
+      <DependentUpon>frmStockEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\MDIForm.resx">
+      <DependentUpon>MDIForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmSalesReturn.resx">
+      <DependentUpon>frmSalesReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmReminderView.resx">
+      <DependentUpon>frmReminderView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmDailyCustomer.resx">
+      <DependentUpon>frmDailyCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmProductBatch.resx">
+      <DependentUpon>frmProductBatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmManufacture.resx">
+      <DependentUpon>frmManufacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\MDIMedicalShop.resx">
+      <DependentUpon>MDIMedicalShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmCompanyProgress.resx">
+      <DependentUpon>frmCompanyProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptBankBook.resx">
+      <DependentUpon>rptBankBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rtpProduct.resx">
+      <DependentUpon>rtpProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptStockAndSale.resx">
+      <DependentUpon>rptStockAndSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmShelf.resx">
+      <DependentUpon>frmShelf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmCreateFinancialYear.resx">
+      <DependentUpon>frmCreateFinancialYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmAccountLedger.resx">
+      <DependentUpon>frmAccountLedger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmReceiptRegister.resx">
+      <DependentUpon>frmReceiptRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmProductGroup.resx">
+      <DependentUpon>frmProductGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmAccountGroup.resx">
+      <DependentUpon>frmAccountGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptSales.resx">
+      <DependentUpon>rptSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptBalanceSheet.resx">
+      <DependentUpon>rptBalanceSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmsalesReturnRegister.resx">
+      <DependentUpon>frmsalesReturnRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptMinimumStock.resx">
+      <DependentUpon>rptMinimumStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmTelephoneDirectory.resx">
+      <DependentUpon>frmTelephoneDirectory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmPaymentRegister.resx">
+      <DependentUpon>frmPaymentRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptShortExpiry.resx">
+      <DependentUpon>rptShortExpiry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmScheduler.resx">
+      <DependentUpon>frmScheduler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptCounterSale.resx">
+      <DependentUpon>rptCounterSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmReceipt.resx">
+      <DependentUpon>frmReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptSalesReturn.resx">
+      <DependentUpon>rptSalesReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmPurchaseReturnRegister.resx">
+      <DependentUpon>frmPurchaseReturnRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptReceipt.resx">
+      <DependentUpon>rptReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptPriceList.resx">
+      <DependentUpon>rptPriceList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmAboutUs.resx">
+      <DependentUpon>frmAboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptPayment.resx">
+      <DependentUpon>rptPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmPurchaseReturn.resx">
+      <DependentUpon>frmPurchaseReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmCounterSale.resx">
+      <DependentUpon>frmCounterSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptDailyCustomer.resx">
+      <DependentUpon>rptDailyCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmProduct.resx">
+      <DependentUpon>frmProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptPurchaseReturn.resx">
+      <DependentUpon>rptPurchaseReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptJournalRegister.resx">
+      <DependentUpon>rptJournalRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmGeneralSettings.resx">
+      <DependentUpon>frmGeneralSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmVendor.resx">
+      <DependentUpon>frmVendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptAccountledger.resx">
+      <DependentUpon>rptAccountledger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptLedgerBalance.resx">
+      <DependentUpon>rptLedgerBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmSalesMan.resx">
+      <DependentUpon>frmSalesMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rtpStock.resx">
+      <DependentUpon>rtpStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmStockRegister.resx">
+      <DependentUpon>frmStockRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmSalesInvoice.resx">
+      <DependentUpon>frmSalesInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmDamageStock.resx">
+      <DependentUpon>frmDamageStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptVendor.resx">
+      <DependentUpon>rptVendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmProductDetails.resx">
+      <DependentUpon>frmProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptTaxReport.resx">
+      <DependentUpon>rptTaxReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmJournalEntry.resx">
+      <DependentUpon>frmJournalEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptStockEtry.resx">
+      <DependentUpon>rptStockEtry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptProfitAndLossAnalysis.resx">
+      <DependentUpon>rptProfitAndLossAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptStatistics.resx">
+      <DependentUpon>rptStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmGenericNames.resx">
+      <DependentUpon>frmGenericNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\frmPurchaseInvoice.resx">
+      <DependentUpon>frmPurchaseInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\rptReminder.resx">
+      <DependentUpon>rptReminder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalShop\Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="images\01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MedicalShopBackEnd\MedicalShopBackEnd.csproj">
+      <Project>{d6f74fee-2f92-4ec3-9a07-c2f2723aeef1}</Project>
+      <Name>MedicalShopBackEnd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReportLibrary\CSharp.ReportLibrary.csproj">
+      <Project>{45dcec9a-b73b-45f3-b199-da974c511b6d}</Project>
+      <Name>CSharp.ReportLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

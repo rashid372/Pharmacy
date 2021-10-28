@@ -1,0 +1,26 @@
+D:\Mumtaz Pharma\Mumtaz MS Software\DemoAppCode(1)\MedicalShopBackEnd\bin\Debug\MedicalShopBackEnd.dll.config
+D:\Mumtaz Pharma\Mumtaz MS Software\DemoAppCode(1)\MedicalShopBackEnd\bin\Debug\MedicalShopBackEnd.dll
+D:\Mumtaz Pharma\Mumtaz MS Software\DemoAppCode(1)\MedicalShopBackEnd\bin\Debug\MedicalShopBackEnd.pdb
+D:\Mumtaz Pharma\Mumtaz MS Software\DemoAppCode(1)\MedicalShopBackEnd\obj\Debug\MedicalShopBackEnd.dll
+D:\Mumtaz Pharma\Mumtaz MS Software\DemoAppCode(1)\MedicalShopBackEnd\obj\Debug\MedicalShopBackEnd.pdb
+D:\Mumtaz Pharma\Mumtaz MS Software\Pharmacy\MedicalShopBackEnd\bin\Debug\MedicalShopBackEnd.dll.config
+D:\Mumtaz Pharma\Mumtaz MS Software\Pharmacy\MedicalShopBackEnd\bin\Debug\MedicalShopBackEnd.dll
+D:\Mumtaz Pharma\Mumtaz MS Software\Pharmacy\MedicalShopBackEnd\bin\Debug\MedicalShopBackEnd.pdb
+D:\Mumtaz Pharma\Mumtaz MS Software\Pharmacy\MedicalShopBackEnd\obj\Debug\MedicalShopBackEnd.dll
+D:\Mumtaz Pharma\Mumtaz MS Software\Pharmacy\MedicalShopBackEnd\obj\Debug\MedicalShopBackEnd.pdb
+D:\Shared Data\Applications\pharmacy\Updated version4\Pharmacy\MedicalShopBackEnd\bin\Debug\MedicalShopBackEnd.dll.config
+D:\Shared Data\Applications\pharmacy\Updated version4\Pharmacy\MedicalShopBackEnd\bin\Debug\MedicalShopBackEnd.dll
+D:\Shared Data\Applications\pharmacy\Updated version4\Pharmacy\MedicalShopBackEnd\bin\Debug\MedicalShopBackEnd.pdb
+D:\Shared Data\Applications\pharmacy\Updated version4\Pharmacy\MedicalShopBackEnd\obj\Debug\MedicalShopBackEnd.csprojResolveAssemblyReference.cache
+D:\Shared Data\Applications\pharmacy\Updated version4\Pharmacy\MedicalShopBackEnd\obj\Debug\MedicalShopBackEnd.dll
+D:\Shared Data\Applications\pharmacy\Updated version4\Pharmacy\MedicalShopBackEnd\obj\Debug\MedicalShopBackEnd.pdb
+D:\Shared Data\Applications\pharmacy\Pharmacy1.5\Pharmacy\MedicalShopBackEnd\bin\Debug\MedicalShopBackEnd.dll.config
+D:\Shared Data\Applications\pharmacy\Pharmacy1.5\Pharmacy\MedicalShopBackEnd\bin\Debug\MedicalShopBackEnd.dll
+D:\Shared Data\Applications\pharmacy\Pharmacy1.5\Pharmacy\MedicalShopBackEnd\bin\Debug\MedicalShopBackEnd.pdb
+D:\Shared Data\Applications\pharmacy\Pharmacy1.5\Pharmacy\MedicalShopBackEnd\obj\Debug\MedicalShopBackEnd.dll
+D:\Shared Data\Applications\pharmacy\Pharmacy1.5\Pharmacy\MedicalShopBackEnd\obj\Debug\MedicalShopBackEnd.pdb
+F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\bin\Debug\MedicalShopBackEnd.dll.config
+F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\bin\Debug\MedicalShopBackEnd.dll
+F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\bin\Debug\MedicalShopBackEnd.pdb
+F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\obj\Debug\MedicalShopBackEnd.dll
+F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\obj\Debug\MedicalShopBackEnd.pdb
