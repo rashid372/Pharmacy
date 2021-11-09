@@ -371,6 +371,12 @@ namespace MedicalShop
 					sqlParameter.Value = productinfo.Description;
 					sqlParameter = sqlCommand.Parameters.Add("@unitId", SqlDbType.VarChar);
 					sqlParameter.Value = productinfo.UnitId;
+					sqlParameter = sqlCommand.Parameters.Add("@salesRate", SqlDbType.Decimal);
+					sqlParameter.Value = productinfo.SalesRate;
+					sqlParameter = sqlCommand.Parameters.Add("@purchaseRate", SqlDbType.Decimal);
+					sqlParameter.Value = productinfo.PurchaseRate;
+					sqlParameter = sqlCommand.Parameters.Add("@packing", SqlDbType.Decimal);
+					sqlParameter.Value = productinfo.Packing;
 					sqlCommand.ExecuteNonQuery();
 				}
 				catch (Exception exception1)
