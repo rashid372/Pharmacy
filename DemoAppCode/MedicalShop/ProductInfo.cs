@@ -25,7 +25,46 @@ namespace MedicalShop
 		private string _description;
 
 		private string _unitId;
+		private decimal _purchaseRate;
 
+		private decimal _salesRate;
+
+		private decimal _packing;
+
+		public decimal PurchaseRate
+		{
+			get
+			{
+				return this._purchaseRate;
+			}
+			set
+			{
+				this._purchaseRate = value;
+			}
+		}
+
+		public decimal SalesRate
+		{
+			get
+			{
+				return this._salesRate;
+			}
+			set
+			{
+				this._salesRate = value;
+			}
+		}
+		public decimal Packing
+		{
+			get
+			{
+				return this._packing;
+			}
+			set
+			{
+				this._packing = value;
+			}
+		}
 		public string Description
 		{
 			get
