@@ -251,28 +251,28 @@ namespace MedicalShop
 			try
 			{
 				DataTable dataTable = new DataTable();
-                if (this.btnSave.Text == "&Save")
-                {
-                    // MessageBox.Show("Thank you for using Pharmacy.To gain access please buy full version", "Pharmacy", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                    this.SaveOrEdit();
-                    //Printing print = new Printing();
-                    if (this.lblAmount.Text != null && this.lblAmount.Text != "0")
-                    {
-                        this.lblAmount.Text=   this.lblAmount.Text.Replace("Rs", "");
+                //if (this.btnSave.Text == "&Save")
+                //{
+                //    // MessageBox.Show("Thank you for using Pharmacy.To gain access please buy full version", "Pharmacy", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                //    this.SaveOrEdit();
+                //    //Printing print = new Printing();
+                //    if (this.lblAmount.Text != null && this.lblAmount.Text != "0")
+                //    {
+                //        this.lblAmount.Text=   this.lblAmount.Text.Replace("Rs", "");
   
-                        invoicedatainfo.TotalAmount = decimal.Parse(this.lblAmount.Text.ToString().Trim());
-                    }
+                //        invoicedatainfo.TotalAmount = decimal.Parse(this.lblAmount.Text.ToString().Trim());
+                //    }
                    
-                    if (cbPrint.Checked)
-                    {
-                        PrintingCountersale countersale = new PrintingCountersale();
-                        countersale.Data = invoicedatainfo;
-                        countersale.PrintReport();
-                    }
+                //    if (cbPrint.Checked)
+                //    {
+                //        PrintingCountersale countersale = new PrintingCountersale();
+                //        countersale.Data = invoicedatainfo;
+                //        countersale.PrintReport();
+                //    }
 
-                    this.ClearFunction();
-                }
-                else
+                //    this.ClearFunction();
+                //}
+                //else
                 if (!FinacialYearInfo._activeOrNot)
 				{
 					MessageBox.Show("Selected finacial year has been closed", "Pharmacy", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
