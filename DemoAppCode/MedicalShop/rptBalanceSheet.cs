@@ -440,7 +440,15 @@ namespace MedicalShop
 					}
 					try
 					{
-						num20 = decimal.Parse(dataGridViewRow1.Cells[3].Value.ToString());
+						if(dataGridViewRow1.Cells[3].Value != null)
+                        {
+							num20 = decimal.Parse(dataGridViewRow1.Cells[3].Value.ToString());
+                        }
+                        else
+                        {
+							num20 = new decimal(0);
+						}
+						
 					}
 					catch (Exception exception1)
 					{

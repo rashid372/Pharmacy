@@ -75,7 +75,7 @@ namespace MedicalShop
                 mail.Body = ValidateLicence();
 
                 SmtpServer.Port = 587;
-                SmtpServer.Credentials = new System.Net.NetworkCredential("bigdata.pharmacy@gmail.com", "bigdatainc@2018");
+                SmtpServer.Credentials = new System.Net.NetworkCredential("bigdata.pharmacy@gmail.com", "rashid@mumtaz12345");
                 SmtpServer.EnableSsl = true;
 
                 SmtpServer.Send(mail);
