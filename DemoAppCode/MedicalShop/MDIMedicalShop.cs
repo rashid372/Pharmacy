@@ -71,6 +71,10 @@ namespace MedicalShop
 
 		private ToolStripMenuItem vendorToolStripMenuItem;
 
+		private ToolStripMenuItem venderProductsToolStripMenuItem;
+
+		
+
 		private ToolStripMenuItem salesManToolStripMenuItem;
 
 		private ToolStripMenuItem unitToolStripMenuItem;
@@ -1223,6 +1227,7 @@ namespace MedicalShop
 			this.productToolStripMenuItem = new ToolStripMenuItem();
 			this.manufacturerToolStripMenuItem = new ToolStripMenuItem();
 			this.vendorToolStripMenuItem = new ToolStripMenuItem();
+			this.venderProductsToolStripMenuItem = new ToolStripMenuItem();
 			this.salesManToolStripMenuItem = new ToolStripMenuItem();
 			this.patientToolStripMenuItem = new ToolStripMenuItem();
 			this.greetingToolStripMenuItem = new ToolStripMenuItem();
@@ -1399,7 +1404,7 @@ namespace MedicalShop
 			this.closeCompanyToolStripMenuItem.Text = "Close Company";
 			this.closeCompanyToolStripMenuItem.Click += new EventHandler(this.closeCompanyToolStripMenuItem_Click);
 			ToolStripItemCollection toolStripItemCollections = this.initialRecordsToolStripMenuItem.DropDownItems;
-			transaction = new ToolStripItem[] { this.accountGroupToolStripMenuItem, this.accountLedgerToolStripMenuItem, this.shelfToolStripMenuItem, this.genericNameToolStripMenuItem, this.productGroupToolStripMenuItem, this.toolStripMenuItem3, this.unitToolStripMenuItem, this.productToolStripMenuItem, this.manufacturerToolStripMenuItem, this.vendorToolStripMenuItem, this.salesManToolStripMenuItem, this.patientToolStripMenuItem, this.greetingToolStripMenuItem };
+			transaction = new ToolStripItem[] { this.accountGroupToolStripMenuItem, this.accountLedgerToolStripMenuItem, this.shelfToolStripMenuItem, this.genericNameToolStripMenuItem, this.productGroupToolStripMenuItem, this.toolStripMenuItem3, this.unitToolStripMenuItem, this.productToolStripMenuItem, this.manufacturerToolStripMenuItem, this.vendorToolStripMenuItem, this.salesManToolStripMenuItem, this.patientToolStripMenuItem, this.greetingToolStripMenuItem, this.venderProductsToolStripMenuItem };
 			toolStripItemCollections.AddRange(transaction);
 			this.initialRecordsToolStripMenuItem.Name = "initialRecordsToolStripMenuItem";
 			this.initialRecordsToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
@@ -1444,6 +1449,14 @@ namespace MedicalShop
 			this.vendorToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
 			this.vendorToolStripMenuItem.Text = "Vendor";
 			this.vendorToolStripMenuItem.Click += new EventHandler(this.vendorToolStripMenuItem_Click);
+
+			
+
+			this.venderProductsToolStripMenuItem.Name = "venderProductsToolStripMenuItem";
+			this.venderProductsToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+			this.venderProductsToolStripMenuItem.Text = "Vendor Products";
+			this.venderProductsToolStripMenuItem.Click += new EventHandler(this.venderProductsToolStripMenuItem_Click);
+
 			this.salesManToolStripMenuItem.Name = "salesManToolStripMenuItem";
 			this.salesManToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
 			this.salesManToolStripMenuItem.Text = "Sales Man";
@@ -4073,7 +4086,30 @@ namespace MedicalShop
 				_frmVendor.Show();
 			}
 		}
-
+		private void venderProductsToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			frmVendorProducts _frmVendor = new frmVendorProducts();
+			frmVendorProducts item = Application.OpenForms["frmVendorProducts"] as frmVendorProducts;
+			if (item != null)
+			{
+				item.MdiParent = this;
+				if (item.WindowState != FormWindowState.Minimized)
+				{
+					item.Activate();
+				}
+				else
+				{
+					item.WindowState = FormWindowState.Normal;
+				}
+			}
+			else
+			{
+				_frmVendor.WindowState = FormWindowState.Normal;
+				_frmVendor.MdiParent = this;
+				_frmVendor.Show();
+			}
+		}
+		
 		private void vendorToolStripMenuItem2_Click(object sender, EventArgs e)
 		{
 			rptVendor _rptVendor = new rptVendor();

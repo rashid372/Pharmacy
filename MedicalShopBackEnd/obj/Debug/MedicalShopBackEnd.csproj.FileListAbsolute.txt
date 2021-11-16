@@ -24,3 +24,10 @@ F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\bin\Debug\MedicalShopB
 F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\bin\Debug\MedicalShopBackEnd.pdb
 F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\obj\Debug\MedicalShopBackEnd.dll
 F:\BIG DATA\old code_pharmacy\Pharmacy\MedicalShopBackEnd\obj\Debug\MedicalShopBackEnd.pdb
+C:\Applications\BigData\Pharmacy\MedicalShopBackEnd\bin\Debug\MedicalShopBackEnd.dll.config
+C:\Applications\BigData\Pharmacy\MedicalShopBackEnd\bin\Debug\MedicalShopBackEnd.dll
+C:\Applications\BigData\Pharmacy\MedicalShopBackEnd\bin\Debug\MedicalShopBackEnd.pdb
+C:\Applications\BigData\Pharmacy\MedicalShopBackEnd\obj\Debug\MedicalShopBackEnd.csproj.AssemblyReference.cache
+C:\Applications\BigData\Pharmacy\MedicalShopBackEnd\obj\Debug\MedicalShopBackEnd.csproj.CoreCompileInputs.cache
+C:\Applications\BigData\Pharmacy\MedicalShopBackEnd\obj\Debug\MedicalShopBackEnd.dll
+C:\Applications\BigData\Pharmacy\MedicalShopBackEnd\obj\Debug\MedicalShopBackEnd.pdb

@@ -33,6 +33,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -55,6 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MedicalShop\CryptoEngine.cs" />
+    <Compile Include="MedicalShop\frmVendorProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmVendorProducts.Designer.cs">
+      <DependentUpon>frmVendorProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="MedicalShop\frmPatientpraviousRate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +108,7 @@
     <Compile Include="MedicalShop\rptStockandPrice.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MedicalShop\VendorProductResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
@@ -947,6 +955,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MedicalShop\frmVendorProducts.resx">
+      <DependentUpon>frmVendorProducts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MedicalShop\frmPatientpraviousRate.resx">
       <DependentUpon>frmPatientpraviousRate.cs</DependentUpon>
     </EmbeddedResource>
@@ -1255,6 +1266,7 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="images\01.jpg" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
