@@ -8,16 +8,21 @@ namespace MedicalShop
 {
     class VendorProductResponse
     {
+        private string productName;
+        private decimal purchaseRate;
+        private decimal productPurchaseRate;
         private string productId;
         private string vendorId;
-        private string productName;
-        private string vendorName;
-        private float purchaseRate;
 
-        public string ProductId { get => productId; set => productId = value; }
-        public string VendorId { get => vendorId; set => vendorId = value; }
+        private string vendorName;
+
+        [System.ComponentModel.Browsable(false)]
+      virtual  public string ProductId { get => productId; set => productId = value; }
+        [System.ComponentModel.Browsable(false)]
+        virtual  public string VendorId { get => vendorId; set => vendorId = value; }
         public string ProductName { get => productName; set => productName = value; }
         public string VendorName { get => vendorName; set => vendorName = value; }
-        public float PurchaseRate { get => purchaseRate; set => purchaseRate = value; }
+        public decimal PurchaseRate { get => purchaseRate; set => purchaseRate = value; }
+        public decimal ProductPurchaseRate { get => productPurchaseRate; set => productPurchaseRate = value; }
     }
 }

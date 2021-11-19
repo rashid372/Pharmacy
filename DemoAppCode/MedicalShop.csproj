@@ -109,6 +109,8 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MedicalShop\VendorProductResponse.cs" />
+    <Compile Include="MedicalShop\VendorProductsInfo.cs" />
+    <Compile Include="MedicalShop\VendorProductsSP.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
@@ -1267,6 +1269,7 @@
     </None>
     <None Include="images\01.jpg" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\MedicalShop.VendorProductResponse.datasource" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -1283,6 +1286,9 @@
       <Project>{45dcec9a-b73b-45f3-b199-da974c511b6d}</Project>
       <Name>CSharp.ReportLibrary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\panel8.BackgroundImage.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
