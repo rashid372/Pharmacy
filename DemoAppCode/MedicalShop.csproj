@@ -56,6 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MedicalShop\CryptoEngine.cs" />
+    <Compile Include="MedicalShop\frmPurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalShop\frmPurchaseOrder.Designer.cs">
+      <DependentUpon>frmPurchaseOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="MedicalShop\frmVendorProducts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -957,6 +963,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MedicalShop\frmPurchaseOrder.resx">
+      <DependentUpon>frmPurchaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MedicalShop\frmVendorProducts.resx">
       <DependentUpon>frmVendorProducts.cs</DependentUpon>
     </EmbeddedResource>
@@ -1289,6 +1298,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\panel8.BackgroundImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\panel1.BackgroundImage.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -83,6 +83,9 @@ namespace MedicalShop
 
 		private ToolStripMenuItem purchaseToolStripMenuItem;
 
+		private ToolStripMenuItem purchaseOrderToolStripMenuItem;
+
+
 		private ToolStripMenuItem purchaseReturnToolStripMenuItem;
 
 		private ToolStripMenuItem salesToolStripMenuItem;
@@ -1233,6 +1236,7 @@ namespace MedicalShop
 			this.greetingToolStripMenuItem = new ToolStripMenuItem();
 			this.transactToolStripMenuItem = new ToolStripMenuItem();
 			this.purchaseToolStripMenuItem = new ToolStripMenuItem();
+			this.purchaseOrderToolStripMenuItem = new ToolStripMenuItem();
 			this.purchaseReturnToolStripMenuItem = new ToolStripMenuItem();
 			this.salesToolStripMenuItem = new ToolStripMenuItem();
 			this.salesReturnToolStripMenuItem = new ToolStripMenuItem();
@@ -1470,12 +1474,18 @@ namespace MedicalShop
 			this.greetingToolStripMenuItem.Text = "Greeting Text";
 			this.greetingToolStripMenuItem.Click += new EventHandler(this.greetingToolStripMenuItem_Click);
 			ToolStripItemCollection dropDownItems1 = this.transactToolStripMenuItem.DropDownItems;
-			transaction = new ToolStripItem[] { this.purchaseToolStripMenuItem, this.purchaseReturnToolStripMenuItem, this.salesToolStripMenuItem, this.salesReturnToolStripMenuItem, this.counterSaleToolStripMenuItem, this.paymentVoucherToolStripMenuItem, this.receiptVoucherToolStripMenuItem, this.journalEntryToolStripMenuItem };
+			transaction = new ToolStripItem[] { this.purchaseOrderToolStripMenuItem, this.purchaseToolStripMenuItem, this.purchaseReturnToolStripMenuItem, this.salesToolStripMenuItem, this.salesReturnToolStripMenuItem, this.counterSaleToolStripMenuItem, this.paymentVoucherToolStripMenuItem, this.receiptVoucherToolStripMenuItem, this.journalEntryToolStripMenuItem };
 			dropDownItems1.AddRange(transaction);
 			this.transactToolStripMenuItem.Name = "transactToolStripMenuItem";
 			this.transactToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
 			this.transactToolStripMenuItem.Text = "Transactions";
 			this.transactToolStripMenuItem.Click += new EventHandler(this.transactToolStripMenuItem_Click);
+
+			this.purchaseOrderToolStripMenuItem.Name = "purchaseOrderToolStripMenuItem";
+			this.purchaseOrderToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+			this.purchaseOrderToolStripMenuItem.Text = "Purchase Order";
+			this.purchaseOrderToolStripMenuItem.Click += new EventHandler(this.purchaseOrderToolStripMenuItem_Click);
+
 			this.purchaseToolStripMenuItem.Name = "purchaseToolStripMenuItem";
 			this.purchaseToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
 			this.purchaseToolStripMenuItem.Text = "Purchase";
@@ -3109,6 +3119,30 @@ namespace MedicalShop
 		{
 			frmPurchaseInvoice _frmPurchaseInvoice = new frmPurchaseInvoice();
 			frmPurchaseInvoice item = Application.OpenForms["frmPurchaseInvoice"] as frmPurchaseInvoice;
+			if (item != null)
+			{
+				item.MdiParent = this;
+				if (item.WindowState != FormWindowState.Minimized)
+				{
+					item.Activate();
+				}
+				else
+				{
+					item.WindowState = FormWindowState.Normal;
+				}
+			}
+			else
+			{
+				_frmPurchaseInvoice.WindowState = FormWindowState.Normal;
+				_frmPurchaseInvoice.MdiParent = this;
+				_frmPurchaseInvoice.Show();
+			}
+		}
+
+		private void purchaseOrderToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			frmPurchaseOrder _frmPurchaseInvoice = new frmPurchaseOrder();
+			frmPurchaseOrder item = Application.OpenForms["frmPurchaseOrder"] as frmPurchaseOrder;
 			if (item != null)
 			{
 				item.MdiParent = this;
