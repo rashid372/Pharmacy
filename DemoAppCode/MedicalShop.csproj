@@ -90,6 +90,13 @@
     <Compile Include="MedicalShop\Printing.cs" />
     <Compile Include="MedicalShop\PrintingCountersale.cs" />
     <Compile Include="MedicalShop\PrintingPurchaseInvoice.cs" />
+    <Compile Include="MedicalShop\PuchaseOrderMasterInfo.cs" />
+    <Compile Include="MedicalShop\PurchaseOrderDetailsInfo.cs" />
+    <Compile Include="MedicalShop\PurchaseOrderDetailsSP.cs" />
+    <Compile Include="MedicalShop\PurchaseOrderInfo.cs" />
+    <Compile Include="MedicalShop\PurchaseOrderItem.cs" />
+    <Compile Include="MedicalShop\PurchaseOrderMasterSP.cs" />
+    <Compile Include="MedicalShop\PurchaseOrderSP.cs" />
     <Compile Include="MedicalShop\ReportsViewer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1278,6 +1285,9 @@
     </None>
     <None Include="images\01.jpg" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\MedicalShop.PurchaseOrderDetailsInfo.datasource" />
+    <None Include="Properties\DataSources\MedicalShop.PurchaseOrderInfo.datasource" />
+    <None Include="Properties\DataSources\MedicalShop.PurchaseOrderItem.datasource" />
     <None Include="Properties\DataSources\MedicalShop.VendorProductResponse.datasource" />
   </ItemGroup>
   <ItemGroup>
