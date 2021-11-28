@@ -74,6 +74,10 @@ namespace MedicalShop
 
 		private Label label4;
 
+		private Label lblTotalDesc;
+		private Label lblTotal;
+		private decimal totalAmount = 0;
+
 		private DateTimePicker dtpFrom;
 
 		private DateTimePicker dtpTo;
@@ -569,6 +573,7 @@ namespace MedicalShop
 						dataTable = this.mastersp.SalesReportForPatient(DateTime.Parse(this.dtpFrom.Text), DateTime.Parse(this.dtpTo.Text), this.cmbSearchBy.SelectedValue.ToString());
 					}
 				}
+				totalAmount = 0;
 				foreach (DataRow row in dataTable.Rows)
 				{
 					this.dgvReport.Rows.Add();
@@ -592,7 +597,9 @@ namespace MedicalShop
 					num1 = (!(row.ItemArray[10].ToString() == "True") ? num1 + ((num2 * num3) - (((num2 * num3) * num4) / new decimal(100))) : (num1 + ((num2 * num3) - (((num2 * num3) * num4) / new decimal(100)))) + ((((num2 * num3) - (((num2 * num3) * num4) / new decimal(100))) * num5) / new decimal(100)));
 					num1 = Math.Round(num1, 2);
 					this.dgvReport.Rows[lightSkyBlue].Cells[8].Value = num1.ToString();
+					totalAmount += num1;
 				}
+				lblTotal.Text = totalAmount.ToString();
 			}
 			catch (Exception exception1)
 			{
@@ -642,6 +649,8 @@ namespace MedicalShop
 			this.cmbSearchBy = new ComboBox();
 			this.cmbSearchFor = new ComboBox();
 			this.label4 = new Label();
+			this.lblTotalDesc = new Label();
+			this.lblTotal = new Label();
 			this.dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
 			this.dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
 			this.dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
@@ -926,6 +935,20 @@ namespace MedicalShop
 			this.label4.Size = new System.Drawing.Size(59, 13);
 			this.label4.TabIndex = 17;
 			this.label4.Text = "Search By:";
+
+			this.lblTotalDesc.AutoSize = true;
+			this.lblTotalDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25f, FontStyle.Bold, GraphicsUnit.Point, 0);
+			this.lblTotalDesc.Location = new Point(800, 610);
+			this.lblTotalDesc.Name = "lblTotalDesc";
+			this.lblTotalDesc.Size = new System.Drawing.Size(50, 13);
+			this.lblTotalDesc.Text = "Total:";
+
+			this.lblTotal.AutoSize = true;
+			this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25f, FontStyle.Bold, GraphicsUnit.Point, 0);
+			this.lblTotal.Location = new Point(850, 610);
+			this.lblTotal.Name = "lblTotal";
+			this.lblTotal.Size = new System.Drawing.Size(80, 13);
+
 			this.dataGridViewTextBoxColumn1.HeaderText = "Column1";
 			this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
 			this.dataGridViewTextBoxColumn1.ReadOnly = true;
@@ -977,6 +1000,8 @@ namespace MedicalShop
 			base.Controls.Add(this.panel2);
 			base.Controls.Add(this.panel1);
 			base.Controls.Add(this.dgvReport);
+			base.Controls.Add(this.lblTotalDesc);
+			base.Controls.Add(this.lblTotal);
 			base.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			base.KeyPreview = true;
 			base.Name = "rptSales";

@@ -24,7 +24,8 @@ namespace MedicalShop
 			try
 			{
 
-
+				this.cmbPurchaseTitles.Text = "";
+				this.cmbPurchaseTitles.SelectedItem=null;
 			}
 			catch (Exception exception1)
 			{
@@ -93,6 +94,7 @@ namespace MedicalShop
             {
 				if (this.cmbVendor.SelectedValue != null)
 				{
+					this.clear();
 					int isSelected;
 					int.TryParse(this.cmbVendor.SelectedValue.ToString(), out isSelected);
 					if (isSelected > 0)
