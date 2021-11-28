@@ -255,7 +255,7 @@ namespace MedicalShop
 			if (e.ColumnIndex == senderGrid.Columns["select"].Index && e.RowIndex >= 0)
 			{
 				PurchaseOrderInfo selected = senderGrid.Rows[e.RowIndex].DataBoundItem as PurchaseOrderInfo;
-				if(cmbPurchaseTitles.Text == "")
+				if(cmbPurchaseTitles.SelectedValue == null)
                 {
 					SavePurchaseOrderMaster(new PuchaseOrderMasterInfo { 
 					CreatedBy="1",
@@ -267,8 +267,16 @@ namespace MedicalShop
 
 					});
 					this.FillPurchaseTitle();
+					SavePurchaseOrderDetails(new PurchaseOrderDetailsInfo
+					{
+						PurchaseOrderMasterId = long.Parse(cmbPurchaseTitles.SelectedValue.ToString()),
+						ProductId = selected.ProductId,
+						Qty = selected.Quantity,
+						Rate = selected.VendorRate != 0 ? selected.VendorRate : selected.ProductRate
+					});
+					ViewPurchaseOrderDetails(this.cmbVendor.SelectedValue.ToString());
 
-                }
+				}
                 else
                 {
 					SavePurchaseOrderDetails(new PurchaseOrderDetailsInfo
